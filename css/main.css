@@ -432,9 +432,6 @@ a {
   .product__item:last-child {
     margin-bottom: 0;
   }
-  .product__item .product__item-second::after {
-    left: 120px;
-  }
 }
 .benefits__list {
   max-width: 1110px;
@@ -1324,6 +1321,10 @@ a {
     margin-right: 0;
   }
 }
+.product-work__list {
+  justify-content: space-around;
+}
+
 .product-work__item {
   max-width: 1027px;
   display: flex;

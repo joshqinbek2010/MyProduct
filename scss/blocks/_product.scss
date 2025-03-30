@@ -94,10 +94,5 @@
         &:last-child{
             margin-bottom: 0;
         }
-        .product__item-second{
-            &::after{
-                left: 120px;
-            }
-        }
     }
 }
