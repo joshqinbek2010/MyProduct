@@ -1,0 +1,50 @@
+.join{
+    margin: 150px 0;
+}
+.join__container{
+    max-width: 968px;
+    background-color: $green;
+    padding: 55px 50px;
+    border-radius: 32px;
+    display: flex;
+    background-image: url('../../img/join-bg.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+}
+.join__title{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 151%;
+    letter-spacing: 0%;
+    color: #fff;
+    max-width: 510px;
+    margin-bottom: 98px;
+}
+.join__link{
+    background-color: #fff;
+    color: $green;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    &:hover{
+        color: #fff;
+        background-color: $green;
+        border:1px solid black;
+    }
+}
+@media only screen and (max-width:900px){
+    .join__container{
+        background-position: center bottom;
+        padding-bottom: 380px;
+        padding-right: 10px;
+        max-width: 371px;
+        text-align: center;
+    }
+    .join__title{
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+.theme-button--dark{
+    background-color: #1F2E35;
+}
+.body-dark{
+    background-color: #1F2E35;
+}
+.hidden--body{
+    overflow: hidden;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --logo:url("../img/logo-light.png");
+    --close:url("../img/hamburger--close.svg") no-repeat center center;
+    --open:url("../img/hamburger--open.svg") no-repeat center center;
+    --white: #22343D;
+    --green: #02897A;
+}
+.body-dark{
+    --button-background:rgba(14, 135, 132, 0.7);
+    --text-color:rgba(254, 252, 247, 1);
+    --close:url("../img/hamburger--close--light.svg") no-repeat center center;
+    --open:url("../img/hamburger--open--lights.svg") no-repeat center center;
+    --white:#fff;
+    --green: #fff;
+}
+.visually-hidden { 
+    /* Contain text within 1px box */
+    height: 1px; 
+    overflow: hidden;
+    width: 1px;
+    /* Keep the layout */  
+    position: absolute;
+    /* Remove any visible trace (e.g. background color) */
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%); /* browsers in the future */
+    /* Prevent the screen reader to skip spaces between words */
+    white-space: nowrap;
+    text-align: center;
+  }

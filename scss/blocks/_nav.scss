@@ -1,0 +1,26 @@
+.nav{
+    display: flex;
+    align-items: center;
+}
+.nav__list{
+    display: flex;
+}
+.nav__item{
+    margin-right: 25px;
+}
+.nav__link{
+    color: $black;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: var(--white);
+    &:hover{
+        color: black;
+    }
+}
+@media only screen and (max-width:900px){
+    .nav{
+        display: none;
+    }
+}

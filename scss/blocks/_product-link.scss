@@ -1,0 +1,12 @@
+.product-link{
+    padding: 15px 41px;
+    color: white;
+    background-color: $green;
+    border-radius: 5px;
+    transition: 400ms;
+    &:hover{
+        background-color: transparent;
+        border: 1px solid $green;
+        color: $green;
+    }
+}

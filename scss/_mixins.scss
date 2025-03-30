@@ -1,0 +1,47 @@
+@mixin dialog($orqa-fon, $joylashuv){
+    background-color: $orqa-fon;
+    padding: 15px 25px;
+    border-radius: 27px;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0px 2px 8px 0px #5675921A;
+    &::after{
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        content: '';
+        background-color: #fff;
+        border-radius: 50%;
+        bottom: -6px;
+    }
+    &::before{
+        position: absolute;
+        width: 9px;
+        height: 9px;
+        content: '';
+        background-color: #fff;
+        border-radius: 50%;
+        bottom: -20px;
+        box-shadow: 0px 2px 8px 0px #5675921A;
+    }
+    @if($joylashuv == "left"){
+        margin-left: 14px;
+        margin-top: -16px;
+        &::before{
+            left: 21px;
+        }
+        &::after{
+            left: 32px;
+        }
+    }
+    @else if($joylashuv == "right"){
+        margin-right: 21px;
+        margin-top: 14px;
+        &::after{
+            right: 55px;
+        }
+        &::before{
+            right: 36px;
+        }
+    }
+}

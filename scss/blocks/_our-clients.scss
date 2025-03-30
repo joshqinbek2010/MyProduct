@@ -1,0 +1,25 @@
+.our-clients{
+    margin-top: 100px;
+}
+.our-clients__title{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.our-clients__link{
+    margin-right: 64px;
+}
+.our-clients__wrapper{
+    text-align: center;
+}
+@media only screen and (max-width:900px){
+    .our-clients__img{
+        margin-bottom: 50px;
+        margin-right: 0;
+    }
+}

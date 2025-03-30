@@ -1,0 +1,103 @@
+.product{
+    margin: 150px 0;
+}
+.product__container{
+    text-align: center;
+}
+.product__title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 66px;
+}
+.product__list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.product__item{
+    max-width: 240px;
+    padding-top: 80px;
+    text-align: left;
+    position: relative;
+    margin-right: 25px;
+    &::after{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 40%;
+        background-color: $green;
+        top: 0px;
+        left: 0;
+        content: '';
+        background-image: url('../../img/product-three-img.png');
+        box-shadow: 0px 4px 4px 0px #00000040;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &:nth-child(2){
+        &::after{
+            background-image: url('../../img/product-second-img.png');
+            background-color: $blue;
+        }
+    }
+    &:nth-child(3){
+        &::after{
+            background-image: url('../../img/product-first-img.png');
+            background-color: $purple
+        }
+    }
+    &:nth-child(4){
+        &::after{
+            background-image: url('../../img/product-four-img.png');
+            background-color: $red;
+        }
+        margin-left: 0;
+    }
+}
+.product__item-second{
+    text-align: center;
+    &::after{
+        left: 37%;
+    }
+}
+.product__item-title{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--white);
+}
+.product__item-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: var(--white);
+}
+@media only screen and (max-width:900px){
+    .product__list{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+    .product__item{
+        text-align: center;
+        &::after{
+            left: calc(50% - 25px);
+        }
+        margin-right: 0;
+        margin-bottom: 50px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        .product__item-second{
+            &::after{
+                left: 120px;
+            }
+        }
+    }
+}

@@ -1,0 +1,168 @@
+.price__list{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+}
+.price__info{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--white);
+}
+.price__item{
+    max-width: 322px;
+    box-shadow: 0px 2px 8px 0px #00000040;
+    padding: 43px 70px;
+    border-radius: 8px;
+    margin-right: 25px;
+        &:last-child{
+        margin-right: 0;
+    }
+    &:hover{
+        background-color: $green;
+        .price__dollor{
+            color: #fff;
+        }
+        .price__price{
+            color: #fff;
+        }
+        .price__easy-link{
+            color: #fff;
+        }
+        .price__item-text{
+            color: #fff;
+        }
+        .price__item-title{
+            color: #fff;
+        }
+        .price__item-link{
+            background-color: #fff;
+            color: $green;
+        }
+    }
+}
+.price__title{
+    color: var(--white);
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.price__title-small{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--white);
+    text-align: center;
+}
+.price__text{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--white);
+}
+.price__status{
+    display: flex;
+    align-items: center;
+    margin-bottom: -70px;
+}
+.price__easy-link{
+    display: block;
+}
+.price__item-title{
+    color: var(--white);
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0px;
+}
+.price__item-text{
+    margin-top: -20px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    color: var(--white);
+    margin-bottom: -80px;
+}
+.price__price{
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 100px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: var(--green);
+    margin-right: 15px;
+}
+.price__dollor{
+    font-size: 22px;
+    color: var(--green);
+}
+.price__month{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1px;
+    color: #AFAFAF;
+    margin-top: -20px;
+}
+.price__easy-link{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+.price__link-box{
+    margin-bottom: 50px;
+}
+@media only screen and (max-width:1016px){
+    .price__item-link{
+        padding: 15px 36px;
+    }
+}
+@media only screen and (max-width:996px){
+    .price__item-link{
+        padding: 15px 30px;
+    }
+}
+@media only screen and (max-width:966px){
+    .price__item-link{
+        padding: 15px 25px;
+    }
+}
+@media only screen and (max-width:929px){
+    .price__item-link{
+        padding: 15px 20px;
+    }
+}
+@media only screen and (max-width:900px){
+    .price__list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .price__item{
+        margin-bottom: 50px;
+        &:last-child{
+            margin-left: -25px;
+            margin-bottom: 0;
+            padding: 43px 60px;
+        }
+    }
+}
